@@ -1,9 +1,9 @@
 package task1;
-import java.util.Random;
+import java.util.Random; // для исправления ошибки random
 
 public class Scores3 {
     public static void main(String[] args) {
-        Random random = new Random(); // добавлено для исправления ошибки random
+        Random random = new Random(); // для исправления ошибки random
         java.util.Scanner scanner = new java.util.Scanner(System.in);
 
         int score = random.nextInt(100) + 1;
