@@ -8,21 +8,19 @@ public class GuessTheNumber6 {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        int secretNumber = random.nextInt(100) + 1;
+        int secretNumber = random.nextInt(100) + 1; // nextInt(100) - метод, который возвращает случайное число от 0 до 99, а +1 увеличивает диапозон до 100
 
         int attempts = 3;
 
         System.out.println("ИГРА 'УГАДАЙ ЧИСЛО'");
         System.out.println("Я загадал число от 1 до 100.");
         System.out.println("У тебя " + attempts + " попытки чтобы угадать!");
-        System.out.println("--------------------------------");
 
 
         for (int attempt = 1; attempt <= attempts; attempt++) {
             System.out.printf("Попытка %d из %d. Введи число: ", attempt, attempts);
 
-
-            if (!scanner.hasNextInt()) {
+            if (!scanner.hasNextInt()) { // hasNextInt() - функция, который проверяет: тру и фолс :))
                 System.out.println("Ошибка! Введи целое число.");
                 scanner.next(); // Очистка неправильного ввода
                 attempt--; // Не засчитываем эту попытку
@@ -56,7 +54,6 @@ public class GuessTheNumber6 {
             // Вывод оставшихся попыток (кроме последней)
             if (attempt < attempts) {
                 System.out.printf("Осталось попыток: %d\n", attempts - attempt);
-                System.out.println("--------------------------------");
             }
         }
 

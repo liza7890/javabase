@@ -7,7 +7,7 @@ public class TrafficLight1 {
         System.out.println("Код цвета: " + colorCode);
 
         switch (colorCode) {
-            case 0: System.out.println("Красный цвет"); break;
+            case 0: System.out.println("Красный цвет"); break; //  case 0 (0 обозначает некий набор слов, break завершение)
             case 1: System.out.println("Зеленый цвет"); break;
             case 2: System.out.println("Желтый цвет"); break;
         }
